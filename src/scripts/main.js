@@ -7,13 +7,9 @@ function cloneColumn() {
     const cell = rows[i].cells[1];
     const cellCopy = cell.cloneNode(true);
 
-    rows[i].append(cellCopy);
-  }
+    rows[i].insertBefore(cellCopy, rows[i].cells[4]);
 
-  for (let i = 0; i < rows.length; i++) {
-    const cell = rows[i].cells[4];
-
-    rows[i].append(cell);
+    // rows[i].append(cellCopy);
   }
 }
 
