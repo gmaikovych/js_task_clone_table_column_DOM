@@ -8,8 +8,6 @@ function cloneColumn() {
     const cellCopy = cell.cloneNode(true);
 
     rows[i].insertBefore(cellCopy, rows[i].cells[4]);
-
-    // rows[i].append(cellCopy);
   }
 }
 
